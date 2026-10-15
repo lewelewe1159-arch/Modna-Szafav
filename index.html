@@ -2,28 +2,95 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Modna Szafa</title>
-
 <style>
 *{box-sizing:border-box}
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#faf8f6;
-color:#171717;
-}
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:42px 20px;
-}
+body{margin:0;font-family:Arial,sans-serif;background:#faf8f6;color:#171717}
+header{background:#111;color:#fff;text-align:center;padding:35px 15px}
 header h1{margin:0;font-size:38px}
-header p{color:#ddd;margin-bottom:0}
-main{max-width:1100px;margin:auto;padding:30px 16px}
-.intro{text-align:center;margin-bottom:30px}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:
+main{max-width:1000px;margin:auto;padding:25px 15px}
+.intro{text-align:center;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 15px #ddd}
+.card img{width:100%;height:390px;object-fit:cover;display:block}
+.content{padding:18px}
+.kesi{background:#111;color:#fff;padding:5px 10px;border-radius:15px;font-size:12px}
+h2{font-size:19px}
+.price{font-size:21px;font-weight:bold}
+.info{border-top:1px solid #ddd;padding-top:10px;color:#555;font-size:14px}
+footer{text-align:center;padding:30px;color:#777}
+</style>
+</head>
+<body>
+<header>
+<h1>Modna Szafa</h1>
+<p>Sukienki Kesi</p>
+</header>
+<main>
+<div class="intro">
+<h2>Kolekcja sukienek</h2>
+<p>Eleganckie czarne modele na wyjątkowe okazje.</p>
+</div>
+<div class="grid">
+  <div class="card">
+<img src="file_0000000092d0824685046cbee6391c0f.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Sukienka z cyrkoniami i łańcuszkami</h2>
+<p>Czarna sukienka z ozdobnym dekoltem i połyskującymi cyrkoniami.</p>
+<p class="price">89,99 zł</p>
+</div></div>
+
+<div class="card">
+<img src="file_000000003dfc820aada2352e64abbc35.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Welurowa sukienka z odkrytym ramieniem</h2>
+<p>Czarny welurowy model z elegancką biżuteryjną ozdobą.</p>
+<p class="price">109,99 zł</p>
+</div></div>
+
+<div class="card">
+<img src="file_00000000c0a88210b970bcaddb347ef0.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Sukienka z wycięciami i cyrkoniami</h2>
+<p>Efektowny model z dekoracyjnymi wycięciami i zdobieniami.</p>
+<p class="price">89,99 zł</p>
+</div></div>
+
+<div class="card">
+<img src="file_00000000fb7882108db253ca2fd106c3.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Sukienka z odkrytymi ramionami</h2>
+<p>Czarna sukienka z połyskującymi cyrkoniami.</p>
+<p class="price">109,99 zł</p>
+</div></div>
+  <div class="card">
+<img src="file_00000000d38c821088efc222bc727eee.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Sukienka z siateczką i złotymi zdobieniami</h2>
+<p>Czarna sukienka z transparentną górą i złotymi zdobieniami.</p>
+<p class="price">109,99 zł</p>
+</div></div>
+
+<div class="card">
+<img src="file_00000000c64c820a9026ec9d82d58c95.png">
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Sukienka z siateczką i złotymi pasami</h2>
+<p>Elegancki model z transparentnymi rękawami i złotymi detalami.</p>
+<p class="price">109,99 zł</p>
+</div></div>
+
+</div>
+</main>
+
+<footer>© Modna Szafa</footer>
+
+</body> 
+</html>
+  
