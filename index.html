@@ -21,15 +21,11 @@ header{
 }
 header h1{margin:0;font-size:40px}
 header p{color:#ddd}
-main{
-  max-width:1100px;
-  margin:auto;
-  padding:35px 16px;
-}
+main{max-width:1100px;margin:auto;padding:35px 16px}
 .intro{text-align:center;margin-bottom:30px}
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:22px;
 }
 .card{
@@ -38,11 +34,17 @@ main{
   overflow:hidden;
   box-shadow:0 6px 20px rgba(0,0,0,.09);
 }
-.card img{
+.gallery{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+}
+.gallery img{
+  min-width:100%;
   width:100%;
   height:390px;
   object-fit:cover;
-  display:block;
+  scroll-snap-align:start;
 }
 .content{padding:20px}
 .kesi{
@@ -61,11 +63,13 @@ p{line-height:1.5}
   color:#555;
   font-size:14px;
 }
-footer{
+.hint{
   text-align:center;
-  padding:35px;
+  font-size:12px;
   color:#777;
+  margin:8px;
 }
+footer{text-align:center;padding:35px;color:#777}
 </style>
 </head>
 
@@ -86,7 +90,11 @@ footer{
 <div class="grid">
 
 <div class="card">
-<img src="file_000000003dfc820aada2352e64abbc35.png" alt="Sukienka Kesi">
+<div class="gallery">
+<img src="file_000000003dfc820aada2352e64abbc35.png">
+<img src="file_00000000da4881f49bb9ba3388211884.png">
+</div>
+<div class="hint">← przesuń zdjęcie →</div>
 <div class="content">
 <span class="kesi">Kesi</span>
 <h2>Czarna welurowa sukienka</h2>
@@ -96,9 +104,58 @@ footer{
 </div>
 
 <div class="card">
-<img src="file_0000000092d0824685046cbee6391c0f.png" alt="Sukienka Kesi">
+<div class="gallery">
+<img src="file_0000000092d0824685046cbee6391c0f.png">
+<img src="file_00000000f1b88210affa411276d2fe30.png">
+</div>
+<div class="hint">← przesuń zdjęcie →</div>
 <div class="content">
 <span class="kesi">Kesi</span>
 <h2>Czarna sukienka z połyskującymi detalami</h2>
 <p>Elegancki model z długim rękawem i ozdobnymi elementami.</p>
-<p class="info"><
+<p class="info"><b>Na widocznej metce:</b><br>95% wiskoza • 5% Lycra<br>Pranie do 30°C</p>
+</div>
+</div>
+
+<div class="card">
+<div class="gallery">
+<img src="file_00000000c0a88210b970bcaddb347ef0.png">
+<img src="file_00000000fb7882108db253ca2fd106c3.png">
+</div>
+<div class="hint">← przesuń zdjęcie →</div>
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Czarna sukienka ze zdobieniami</h2>
+<p>Klasyczna czerń połączona z efektownymi połyskującymi detalami.</p>
+<p class="info"><b>Na widocznej metce:</b><br>95% wiskoza • 5% Lycra<br>Pranie do 30°C</p>
+</div>
+</div>
+
+<div class="card">
+<div class="gallery">
+<img src="file_00000000c64c820a9026ec9d82d58c95.png">
+<img src="file_00000000fdf481f49c496653aa55f74a.png">
+</div>
+<div class="hint">← przesuń zdjęcie →</div>
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Czarna sukienka ze złotymi detalami</h2>
+<p>Elegancki model z transparentnymi elementami i ozdobnym wykończeniem.</p>
+<p class="info"><b>Na widocznej metce:</b><br>95% wiskoza • 5% Lycra<br>Pranie do 30°C</p>
+</div>
+</div>
+
+<div class="card">
+<div class="gallery">
+<img src="file_00000000d38c821088efc222bc727eee.png">
+</div>
+<div class="content">
+<span class="kesi">Kesi</span>
+<h2>Czarna sukienka z transparentnymi elementami</h2>
+<p>Elegancki fason wykończony dekoracyjnymi, połyskującymi detalami.</p>
+<p class="info"><b>Na widocznej metce:</b><br>95% wiskoza • 5% Lycra<br>Pranie do 30°C</p>
+</div>
+</div>
+
+</div>
+</
